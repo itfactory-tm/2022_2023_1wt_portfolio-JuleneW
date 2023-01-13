@@ -8,10 +8,12 @@ html {
 }
 nav {
     list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 ul {
-    /*background-color: #f9f2e4;*/
-    /*border-radius: 10px;*/
     padding-top: 20px;
     margin: 2px;
     text-align: center;
@@ -44,7 +46,11 @@ body {
 }
 header {
     border: none;
+    margin-top: 100px;
 }
+
+
+
 h1 {
     font-size: 40px;
     max-width: 600px;
@@ -55,7 +61,7 @@ h1 {
     padding: 25px;
     text-align: center;
 }
-h1, h3 {
+h1, h2, h3 {
     font-family: "Lora", serif;
     color: #702232;
 }
@@ -139,4 +145,25 @@ p {
     position: fixed;
     left: 20px;
     display: inline-block;
+}
+table, td, th {
+    color: #f9f2e4;
+    border-color: #f9f2e4;
+    border: 2px solid #f9f2e4;
+    margin: auto;
+}
+h2.tablehead {
+    text-align: center;
+    color: #f9f2e4;
+}
+figure {
+    display: inline-block;
+}
+figcaption {
+    color: #f9f2e4;
+}
+.video {
+    text-align: center;
+    border: unset;
+    background: unset;
 }
