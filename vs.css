@@ -3,74 +3,90 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 18px;
 }
+
 nav {
     list-style-type: none;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     right: 0;
 }
+
 ul {
     padding-top: 20px;
     margin: 2px;
     text-align: center;
     /*position: fixed;*/
 }
+
 li {
     background-color: #f9f2e4;
     border: 1px solid #702232;
     border-radius: 5px;
-    text-decoration: none;
     display: inline-block;
     margin: 10px 5px;
     font-size: 18px;
 }
+
 nav a {
     padding: 10px;
     font-weight: bold;
+    text-decoration: none;
 }
+
 nav a:link {
     color: #702232;
 }
+
 nav a:visited {
     color: darksalmon;
 }
+
 body {
     font-family: "Albert+Sans", sans-serif;
     line-height: 1.5rem;
     background: url("plain-smooth-maroon-paper-background.jpg");
     color: #702232;
 }
+
 header {
     border: none;
     margin-top: 100px;
 }
 
 
-
 h1 {
     font-size: 40px;
     max-width: 600px;
-    margin: 25px auto;
+    margin: -82px auto 25px auto;
     background-color: #f9f2e4;
     border: 2px solid #f9f2e4;
     border-radius: 25px;
     padding: 25px;
     text-align: center;
 }
+#welkom {
+    border: unset;
+    background: unset;
+    margin-top: unset;
+}
+
 h1, h2, h3 {
     font-family: "Lora", serif;
     color: #702232;
 }
+
 h3 {
     font-size: 25px;
     text-decoration: underline;
     text-align: center;
     padding-bottom: 20px;
 }
+
 main {
     max-width: 900px;
     margin: 25px auto;
@@ -80,6 +96,7 @@ main {
     padding: 25px;
     text-align: center;
 }
+
 div {
     max-width: 600px;
     margin: 25px auto;
@@ -89,6 +106,7 @@ div {
     padding: 25px;
     text-align: justify;
 }
+
 #logo {
     max-width: 100%;
     height: auto;
@@ -100,70 +118,86 @@ div {
     padding-top: 13px;
     text-align: center;
 }
+
 figure {
     margin-top: 20px;
     text-align: center;
 }
 
-/*#Equi-tekst {*/
-/*    max-width: 900px;*/
-/*    margin: 25px auto;*/
-/*    background-color: #f9f2e4;*/
-/*    border: 2px solid #f9f2e4;*/
-/*    border-radius: 25px;*/
-/*    padding: 25px;*/
-/*    text-align: center;*/
-/*}*/
 footer {
     color: #f9f2e4;
 }
+
 p {
     text-align: justify;
     overflow: auto;
 }
+
 .right {
     float: right;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+
 .left {
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
-/*#fixed {*/
-/*    display: inline-block;*/
-/*    position: fixed;*/
-/*    top: 100px;*/
-/*    left: 20px;*/
-/*}*/
-/*#relative {*/
-/*    position: relative;*/
-}
+
 #fixed {
     position: fixed;
     left: 20px;
     display: inline-block;
 }
+
 table, td, th {
     color: #f9f2e4;
-    border-color: #f9f2e4;
     border: 2px solid #f9f2e4;
     margin: auto;
 }
+
 h2.tablehead {
     text-align: center;
     color: #f9f2e4;
 }
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
 figure {
     display: inline-block;
 }
+
 figcaption {
     color: #f9f2e4;
 }
+
 .video {
     text-align: center;
     border: unset;
     background: unset;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .album {
+        border: 1px solid red;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .album figure {
+        border: 1px solid green;
+        flex-grow: 1;
+    }
+    h1 {
+        margin-top: -80px;
+    }
 }
