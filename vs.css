@@ -168,6 +168,14 @@ div.child {
     justify-content: flex-start;
 }
 
+div.caption {
+    width: 400px;
+    background-color: unset;
+    color: #f9f2e4;
+    top: 976px;
+    left: 117px;
+}
+
 /*CONTENT*/
 
 p {
@@ -198,6 +206,11 @@ img {
     text-align: center;
     border: unset;
     background: unset;
+}
+
+container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*TABLES*/
@@ -279,7 +292,6 @@ footer {
         border: 1px solid #f9f2e4;
         flex-direction: row;
         gap: 1rem;
-        /*overflow: auto;*/
         flex-wrap: nowrap;
         overflow: auto;
     }
