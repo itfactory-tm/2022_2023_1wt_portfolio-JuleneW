@@ -93,7 +93,7 @@ main {
     box-shadow: 1px 1px 10px #f9f2e4;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Lora", serif;
     color: #702232;
 }
@@ -210,6 +210,7 @@ video {
     text-align: center;
     border: unset;
     background: unset;
+    margin-top: 20px;
 }
 
 .myContainer {
@@ -272,16 +273,6 @@ video {
     }
 }
 
-/*.verkoop_2 img {*/
-/*    width: 400px;*/
-/*    height: 300px;*/
-/*    object-fit: cover;*/
-/*    margin: 1rem;*/
-/*    position: absolute;*/
-/*}*/
-
-
-
 /*TABLES*/
 
 table, td, th {
@@ -294,18 +285,6 @@ table, td, th {
 .tablehead {
     text-decoration: underline;
 }
-
-/*.prijslijst {*/
-/*    padding-top: unset;*/
-/*    margin: unset;*/
-/*    text-align: left;*/
-/*    background-color: unset;*/
-/*    border: unset;*/
-/*    border-radius: unset;*/
-/*    display: block;*/
-/*    font-size: 18px;*/
-/*    box-shadow: unset;*/
-/*}*/
 
 #prijslijst {
     list-style-position: inside;
@@ -331,6 +310,20 @@ table, td, th {
     background-color: red;
 }
 
+#minister {
+    width: 100%;
+}
+
+.row-cols-3 p {
+    font-size: 15px;
+    width: unset;
+    text-align: center;
+}
+
+#certificaat {
+    width: 50%;
+}
+
 /*FOOTER*/
 
 footer {
@@ -343,12 +336,6 @@ footer {
     font-size: 0.8rem;
 }
 
-/*#fixed {*/
-/*    display: none;*/
-/*}*/
-
-
-
 /*BREAKPOINT 600PX*/
 
 @media (min-width: 600px) {
@@ -356,7 +343,7 @@ footer {
         margin-top: -80px;
     }
 
-    .album {
+    .pension {
         display: flex;
         justify-content: space-evenly;
         margin-top: 30px;
@@ -366,23 +353,16 @@ footer {
         overflow: auto;
     }
 
-    .album img {
+    .pension img {
         width: 200px;
         height: 200px;
     }
 
-    .album img:hover {
+    .pension img:hover {
         position: absolute;
         transform: scale(200%);
         border: 10px solid #f9f2e4;
     }
-
-    /*.album figure {*/
-    /*    border: 1px solid green;*/
-    /*    flex-grow: 1;*/
-    /*}*/
-
-
 
     #abiranwedstrijd {
         /*width: 216px;*/
