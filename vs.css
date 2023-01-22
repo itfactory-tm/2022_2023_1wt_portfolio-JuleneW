@@ -345,7 +345,17 @@ table, td, th {
 }
 
 #toscana {
-    width: 9d0%;
+    width: 90%;
+}
+
+#map {
+    width: 80%;
+}
+
+.mapbox {
+    max-width: 100%;
+    background-color: unset;
+    text-align: center;
 }
 
 /*FOOTER*/
