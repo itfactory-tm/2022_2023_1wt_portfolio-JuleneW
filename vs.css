@@ -197,6 +197,18 @@ img {
     flex-direction: column;
 }
 
+.album img {
+    max-width: 100px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.album img:hover {
+    position: absolute;
+    transform: scale(200%);
+    /*border: 10px solid #f9f2e4;*/
+}
+
 .pensionfoto {
     border: 2px solid #f9f2e4;
     padding: 5px;
@@ -322,6 +334,18 @@ table, td, th {
 
 #certificaat {
     width: 50%;
+}
+
+#dracht {
+    width: 90%;
+}
+
+#geboorte {
+    width: 90%;
+}
+
+#toscana {
+    width: 9d0%;
 }
 
 /*FOOTER*/
