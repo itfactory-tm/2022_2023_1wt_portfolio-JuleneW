@@ -432,7 +432,7 @@ footer {
 
     .pension img:hover {
         position: absolute;
-        transform: scale(150%);
+        transform: scale(1.5);
         border: 10px solid #f9f2e4;
     }
 
