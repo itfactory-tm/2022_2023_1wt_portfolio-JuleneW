@@ -28,6 +28,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 /*LISTS*/
@@ -114,6 +115,11 @@ h3 {
     padding-bottom: 20px;
 }
 
+h4.afstamming {
+    text-decoration: underline;
+    color: #f9f2e4;
+}
+
 #welkom {
     border: unset;
     background: unset;
@@ -198,15 +204,10 @@ img {
 }
 
 .album img {
-    max-width: 100px;
-    max-height: 150px;
-    object-fit: cover;
-}
-
-.album img:hover {
-    position: absolute;
-    transform: scale(200%);
-    /*border: 10px solid #f9f2e4;*/
+    /*max-width: 100px;*/
+    /*max-height: 150px;*/
+    /*object-fit: cover;*/
+    min-width: 100px;
 }
 
 .pensionfoto {
@@ -302,8 +303,13 @@ table, td, th {
     list-style-position: inside;
 }
 
+#prijslijst ul {
+    list-style-type: "✓";
+}
+
 #prijslijst ul li ul {
     padding-left: 20px;
+    list-style-type: "🠖";
 }
 
 #lessen {
@@ -400,22 +406,25 @@ footer {
 
     #abiranwedstrijd {
         /*width: 216px;*/
+        /*height: 161px;*/
         max-width: 324px;
         max-height: 242px;
-        /*height: 161px;*/
         float: right;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
     #noriyalwedstrijd {
         /*width: 129px;*/
+        /*height: 195px;*/
         max-width: 193px;
         max-height: 292px;
-        /*height: 195px;*/
         float: left;
         margin-right: 1rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
+    }
+    .float {
+        overflow: auto;
     }
     #doornboom {
         width: 295px;
