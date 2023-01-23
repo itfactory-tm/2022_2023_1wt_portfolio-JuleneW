@@ -49,6 +49,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 1;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -84,3 +85,12 @@ a:visited {
     color: darksalmon;
 }
 
+@media (min-width: 600px) {
+    div {
+        max-width: 900px;
+        margin: 80px auto;
+    }
+    img {
+        max-width: 600px;
+    }
+}
