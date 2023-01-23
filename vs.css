@@ -181,6 +181,10 @@ div.child {
     border-radius: unset;
 }
 
+.pension {
+    background-color: unset;
+}
+
 /*CONTENT*/
 
 p {
@@ -196,6 +200,7 @@ figure {
 
 figcaption {
     color: #f9f2e4;
+    padding-bottom: 10px;
 }
 
 img {
@@ -377,7 +382,7 @@ table, td, th {
 }
 
 .mapbox {
-    max-width: 100%;
+    max-width: 600px;
     background-color: unset;
     text-align: center;
 }
@@ -407,13 +412,15 @@ footer {
     }
 
     .pension {
+        max-width: 1200px;
         display: flex;
         justify-content: space-evenly;
+        margin: 0 auto;
         margin-top: 30px;
         flex-direction: row;
         gap: 1rem;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        /*overflow-x: auto;*/
         border: 2px solid #f9f2e4;
         padding-bottom: 20px;
     }
@@ -425,7 +432,7 @@ footer {
 
     .pension img:hover {
         position: absolute;
-        transform: scale(200%);
+        transform: scale(150%);
         border: 10px solid #f9f2e4;
     }
 
@@ -514,3 +521,76 @@ footer {
     }
 }
 
+@media print {
+
+    nav, .hidden, .top, footer {
+        display: none;
+    }
+
+    .printopmaak, #lessen, #stallingvoor {
+        margin-top: 500px;
+    }
+
+    p img {
+        max-width: 100%;
+    }
+
+    #kopprijslijst, figcaption {
+        color: #702232;
+    }
+    table, td, th {
+        color: #702232;
+        border: 2px solid #702232;
+    }
+
+    .pension img {
+        max-width: 200px;
+    }
+
+    .fokkerijfoto {
+        margin-top: 300px;
+    }
+
+    .linasize {
+        max-width: 200px;
+    }
+
+    .album {
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .album img {
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .row {
+        max-width: 900px;
+        margin: 15px auto;
+    }
+
+    .row-cols-3 p {
+        font-size: 15px;
+        width: unset;
+        text-align: justify;
+    }
+
+    .row-cols-3 img {
+        text-align: center;
+        max-width: 200px;
+        float: left;
+        margin: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .nieuwsfoto {
+        margin-top: 100px;
+    }
+}
